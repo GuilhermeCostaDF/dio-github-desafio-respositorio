@@ -67,7 +67,7 @@ header .menu{
     margin-bottom: 10px;
 }
 
-.texto-apresentacao a{
+.texto-apresentacao a {
     background-color: #122A57;
     color: white;
     text-align: center;
@@ -127,12 +127,12 @@ header .menu{
 #servicos h2{
     color: white;
     font-size: 32px;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
 }
 
 .list-servicos{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .list-servicos .item-servico{
@@ -164,4 +164,55 @@ header .menu{
 .item-servico img{
     width: 80%;
     margin: auto;
+}
+
+#planos{
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.list-planos{
+    display: flex;
+    align-items: flex-end;
+}
+
+.item-plano{
+    flex: 1;
+    border: 5px solid #122A57;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.btn{
+    background-color: #122A57;
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    width: 220px;
+    display: block;
+    text-decoration: none;
+    height: 50px;
+    line-height: 50px;
+    margin: 20px auto 20px auto;
+}
+
+.item-plano h3{
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.item-plano h3::after{
+    content: "";
+    background-color: #122A57;
+    width: 80%;
+    height: 3px;
+    margin: 20px auto 20px auto;
+}
+
+.item-plano ul{
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
 }

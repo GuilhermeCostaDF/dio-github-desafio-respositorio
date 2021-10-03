@@ -258,25 +258,67 @@ footer .footer{
 
 /* MOBILE */
 
-@media(max-width:992px){
+@media(max-width:800px){
     .flex-container{
         flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    header{
+        margin-bottom: 20px;
+        padding:10px;
+    }
+
+    .menu{
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .list-items{
+        margin: 20px auto 10px auto;
+        
     }
     
     .apresentacao{
         flex-direction: column-reverse;
+        box-sizing: border-box;
+        position: relative;
     }
     .apresentacao .texto-apresentacao{
         width: 100%;
     }
 
+    .apresentacao img{
+        max-width: 90%;
+        margin: 30px auto;
+        padding:10px;
+        position: relative;
+    }
+
+    .texto-apresentacao{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .texto-apresentacao a{
+        margin: 20px auto;
+
+    }
+
     #quem-somos{
         flex-direction: column-reverse;
+        padding: 10px;
     }
 
     #quem-somos img{
-        min-width: 320px;
+        box-sizing: border-box;
+        display: block;
+        max-width: 80%;
         margin: auto;
+    }
+
+    #servicos{
+        padding: 10px;
     }
 
     .list-servicos{
@@ -284,8 +326,16 @@ footer .footer{
     }
 
     .item-servico img{
-        width: 50%;
+        width: 25%;
         margin: auto;
+    }
+
+    .item-servico{
+        margin-bottom: 35px;
+    }
+
+    .item-servico a:hover{
+        background-color: #e0e0e0;
     }
 
     .list-planos{
@@ -301,4 +351,7 @@ footer .footer{
     }
 }
 
+@media(max-width:500px){
+    
+}
 
